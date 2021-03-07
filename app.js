@@ -49,15 +49,15 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 //eslint-disable-line
 function sumAndMultiply(a, b, c) { 
-let sum= a + b + c;
-let product= a * b * c ;
-let arr=[sum,product ,'4 and 7 and 5 sum to 16' ,'The product of 4 and 7 and 5 is 140'];
-return arr;
-}
+        
+    let s = sum(sum(a, b)[0], c);
+    let m = multiply(multiply(a, b), c);
+    let three = +a+ 'and' +b+ 'and' +c+ sum +'to' ,s;
+    let four = 'The product of '+a+ 'and' +b+ 'and' +c+ 'is'+ m;
+    return[s,m,three,four];
+    }
     
-    
-console.log(sumAndMultiply(4,7,5));    
-
+    console.log(sumAndMultiply(4, 7, 5));   
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
